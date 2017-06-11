@@ -1,0 +1,8 @@
+FROM resin/armv7hf-debian
+
+MAINTAINER vashchuk.denis@gmail.com
+RUN apt-get -yq update && apt-get -yq upgrade
+
+RUN apt-get install -yq git libreadline-dev uuid-dev g++ clang libdb++-dev libdb-dev zip libssl-dev openssl build-essential \
+    python-dev autotools-dev libicu-dev build-essential libbz2-dev automake doxygen cmake ncurses-dev libtool \
+    ninja-build wget ncurses-dev doxygen libreadline-dev autoconf libtool ninja-build  libboost-dev
